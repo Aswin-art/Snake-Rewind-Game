@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Snake Rewind</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="menu-wrapper">
+        <div class="menu">
+            <div class="menu-content">
+                <div class="heading">
+                    <div class="logo">
+                        <h1>SNAKES</h1>
+                    </div>
+                </div>
+
+                <div class="content">
+                    <div class="heading-content">
+                        <h2>Instruction</h2>
+                    </div>
+                    <div class="text-content">
+                        <ol>
+                            <li>Press "Esc" to pause the game.</li>
+                            <li>Eat fruit to get more point</li>
+                            <li>You eat your body you die</li>
+                            <li>Click rewind button to rewind the game</li>
+                            <li>You can rewind the game max 5 sec</li>
+                            <li>Input your name.</li>
+                            <li>Click play button.</li>
+                        </ol>
+                    </div>
+                    <div class="input-group">
+                        <input type="text" class="name">
+                        <button class="btn-menu">Play</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="pause-wrapper">
+        <div class="pause">
+            <div class="pause-content">
+                <div class="heading-content">
+                    <h1>PAUSE</h1>
+                </div>
+                <div class="text-content">
+                    <p>Press "Esc" again to play the game</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="gameover-wrapper">
+        <div class="gameover">
+            <div class="gameover-content">
+                <div class="heading-content">
+                    <h1>GAMEOVER</h1>
+                </div>
+                <div class="text-content">
+                    <p>Your total score is <span class="score">0</span></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="game-wrapper">
+        <div class="game-info">
+            <h3 class="player-name">Name</h3>
+            <h3>Score: <span class="score">0</span></h3>
+            <h3>Time: <span class="time">00:00:00</span></h3>
+        </div>
+        <canvas id="game"></canvas>
+        <div class="rewind-info">
+            <input type="range" class="rewind" value="5" min="0" max="5">
+            <div class="btn-group">
+                <button class="btn-cancel">Cancel</button>
+                <button class="btn-rewind">Rewind</button>
+                <button class="btn-open-rewind">Rewind</button>
+            </div>
+        </div>
+    </div>
+    
+    <canvas id="background"></canvas>
+
+    <script src="./main.js"></script>
+    <script src="./bg.js"></script>
+</body>
+</html>
